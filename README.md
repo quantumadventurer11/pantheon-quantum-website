@@ -31,6 +31,10 @@ npm run start
 
 ## Deploy To Vercel
 
+Live production deployment:
+
+- https://pantheon-quantum-website.vercel.app
+
 1. Push this repository to GitHub.
 2. In Vercel, choose **Add New Project** and import the GitHub repository.
 3. Keep the default framework preset as **Next.js**.
