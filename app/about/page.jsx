@@ -5,6 +5,21 @@ export const metadata = {
   description: "Mission, vision, philosophy, and staged company approach for Pantheon Quantum."
 };
 
+const projectExamples = [
+  {
+    partner: "Airbus",
+    title: "Quantum Solvers: Enhancing Predictive Aerodynamic Modelling",
+    description:
+      "Benjamin and Vidhi are developing quantum-enhanced PDE solvers and hybrid quantum-classical methods for aerospace and fluid dynamics through the Global Quantum + AI Challenge 2026."
+  },
+  {
+    partner: "Volkswagen Group",
+    title: "Quantum-Enhanced Vision-Language-Action Models in Autonomous Driving and Robotics",
+    description:
+      "Benjamin and Vidhi are exploring quantum feature maps, quantum kernel methods, and quantum-assisted model compression for autonomous driving and robotics through the Global Quantum + AI Challenge 2026."
+  }
+];
+
 export default function AboutPage() {
   return (
     <PageShell
@@ -30,6 +45,21 @@ export default function AboutPage() {
           </article>
         ))}
       </div>
+      <section className="mt-10">
+        <h2 className="text-3xl font-semibold text-white">Project Examples</h2>
+        <p className="mt-4 max-w-3xl text-sm leading-7 text-zinc-300">
+          Benjamin and Vidhi are applying Pantheon Quantum's practical research approach to challenge work with aerospace and automotive use cases.
+        </p>
+        <div className="mt-6 grid gap-5 md:grid-cols-2">
+          {projectExamples.map((project) => (
+            <article className="metal-panel rounded-lg p-7" key={project.partner}>
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-zinc-400">{project.partner}</p>
+              <h3 className="mt-4 text-2xl font-semibold text-white">{project.title}</h3>
+              <p className="mt-4 text-sm leading-7 text-zinc-300">{project.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
       <div className="mt-10">
         <h2 className="text-3xl font-semibold text-white">Founding Team</h2>
         <div className="mt-6 grid gap-5 md:grid-cols-3">

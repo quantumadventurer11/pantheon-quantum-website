@@ -20,11 +20,9 @@ export default function PartnersPage() {
     >
       <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
         {partnerCategories.map((category) => (
-          <article className="metal-panel rounded-lg p-6" key={category}>
-            <h2 className="text-xl font-semibold text-white">{category}</h2>
-            <p className="mt-4 text-sm leading-7 text-zinc-300">
-              Explore collaboration through pilots, advisory work, applied research, commercialization support, or strategic investment.
-            </p>
+          <article className="metal-panel rounded-lg p-6" key={category.title}>
+            <h2 className="text-xl font-semibold text-white">{category.title}</h2>
+            <p className="mt-4 text-sm leading-7 text-zinc-300">{category.description}</p>
           </article>
         ))}
       </div>
