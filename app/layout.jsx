@@ -3,7 +3,7 @@ import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 
 export const metadata = {
-  metadataBase: new URL("https://pantheon-quantum.vercel.app"),
+  metadataBase: new URL("https://pantheonquantum.com"),
   title: {
     default: "Pantheon Quantum | Practical Quantum Applications",
     template: "%s | Pantheon Quantum"
